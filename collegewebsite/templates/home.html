@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet"  >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <title>BMS COLLEGE</title>
+</head>
+
+<body>
+
+   {% include 'header.html' %}
+   {% include 'nav.html' %}
+   <img class="my_image my_image_padding" src="{% static 'img/banner.png' %}" alt="Our products" width="1800 px" height="500 px" >
+
+   <center><a class="btn btn-primary" href="{% url 'login'  %}">Click Here to login</a></center>
+
+
+
+</body>
+</html>

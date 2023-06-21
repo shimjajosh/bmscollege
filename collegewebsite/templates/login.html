@@ -1,0 +1,49 @@
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+</head>
+<body style="background-color:lime" >
+<h2> LOGIN</h2>
+<form action="login" method="post">
+    {% csrf_token %}
+<label> Username</label><input type="text" name="username"placeholder="Enter your user name"> <br>
+<br><label>Password</label><input type="password" name="password" placeholder="Enter your password"> <br>
+<br><a class="btn btn-danger" href="{% url 'login'  %}">submit</a>
+
+<input type="submit" > <br>-->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="sidenav">
+         <div class="login-main-text">
+            <h1> BMS College Application Login Page</h1>
+            <p>Login or register from here to access BMS College Website.</p>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+               <form>
+                  <div class="form-group">
+                     <label>User Name</label>
+                     <input type="text" class="form-control" placeholder="User Name">
+                  </div>
+                  <div class="form-group">
+                     <label>Password</label>
+                     <input type="password" class="form-control" placeholder="Password">
+                  </div>
+
+                  <a class="btn btn-secondary" href="{% url 'newpage1'  %}">submit</a>
+                  <!--<button type="submit" class="btn btn-secondary">Register</button>-->
+                   <a class="btn btn-danger" href="{% url 'register'  %}">Register</a>
+               </form>
+            </div>
+         </div>
+      </div>
+
